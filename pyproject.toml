@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "interview-trainer-ai"
+version = "0.1.0"
+description = "InterviewTrainer AI FastAPI backend"
+authors = ["RonaldoSwift"]
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.15"
+fastapi = ">=0.115,<1.0"
+uvicorn = { version = ">=0.34,<1.0", extras = ["standard"] }
+pydantic = ">=2.10,<3.0"
+
+[build-system]
+requires = ["poetry-core>=2.0"]
+build-backend = "poetry.core.masonry.api"
